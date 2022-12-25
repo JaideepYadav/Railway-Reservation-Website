@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Indian Railway Corporation</title>
+    <style>
+        body {
+            font-family: 'Arial', cursive;
+            color: rgb(125, 208, 236);
+            margin: 0px;
+            padding: 0px;
+            /*background: url('images/good.jpg');*/
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            margin-top: -3vw;
+            background-color: white;
+        }
+
+        #left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: -22px;
+            height: 6vw;
+            margin-top: 4vw;
+        }
+
+        /* .left img {
+            width: 136px;
+
+        }
+
+        .left div {
+            line-height: 19px;
+            font-size: 26px;
+            text-align: center;
+        }*/
+
+        .mid {
+            display: block;
+            width: 60vw;
+            margin: 0 15vw;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+            /*border: 2px solid yellow;*/
+        }
+
+        .navbar {
+            display: inline-block;
+            color: aliceblue;
+            margin-bottom: -1vw;
+            margin-top: 6vw;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: rgb(17, 12, 14);
+            text-decoration: none;
+            padding: 23px 28px;
+            font-weight: bold;
+
+        }
+
+        .navbar li a:hover {
+            text-decoration: none;
+            border-bottom: 3px solid rgb(213, 215, 212);
+
+
+        }
+
+        .navbar li a.active {
+            border-bottom: 3px solid rgb(213, 215, 212);
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: none;
+            color: rgba(250, 100, 0, 0.9);
+            cursor: pointer;
+
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(29, 233, 29);
+        }
+
+
+
+        .form-group input {
+            font-family: 'Baloo Bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid rgb(114, 59, 59);
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 74%;
+            margin: 20px auto;
+        }
+
+        .banner .form-cntr .nav-list .nav-list-item {
+            margin: 0 10px;
+            padding: 5px 15px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, .9);
+        }
+
+        
+        .container5{
+            width: 99vw;
+            height: 40vw;
+            background-image: url(images/third.jpg);
+            background-size: cover;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 400px;
+            margin: 0pxpx auto 0px auto;
+           /* background-image: url(images/good.jpg);*/
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        .register {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 28vw;
+            font-size: 25px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 2px, 2px, 15px rgba(0, 0, 0, 0.3);
+            color: #ffff;
+        }
+
+        #register {
+            margin: 40px;
+        }
+
+        label {
+            font-family: sans-serif;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .f-input {
+            height: 39px;
+            border: 2px solid black;
+            box-shadow: 0 0 5px white;
+            width: 22vw;
+            color: rgb(13, 15, 12);
+            border-radius: 5px;
+            padding-left: 20px;
+            font-weight: bold;
+            outline: none;
+            font-size: 20px;
+
+        }
+
+        #name {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: 0;
+            padding: 7px;
+            background-color: #fff;
+            box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #submit {
+            width: 200px;
+            padding: 7px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 600;
+            border: none;
+            border-radius: 3px;
+            background-color: rgba(250, 100, 0, 0.8);
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        ::placeholder {
+            color: rgb(5, 6, 5);
+            font-weight: 200;
+        }
+
+        label,
+        h1 {
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .container1 {
+            width: 100%;
+
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            /*margin-bottom: 5px;*/
+            background-color: rgb(207, 55, 151);
+            padding: 50px 15px;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3 ease;
+
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            /*background-color: rgba(66, 18, 209, 0.2);*/
+            margin-right: 10px 10px 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+
+
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <img id="left" src="images/rails.jpg" alt="" style="width: 263px;">
+            <ul class="navbar">
+                <li><a href="jaidee.html">Home</a></li>
+                <li><a href="pnrstatus.html" class="active">PNR Status</a></li>
+                <li><a href="holidays.html"> Holidays</a></li>
+                <li><a href="e-catering.html"> E-Catering</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <a href="login.html" style="text-decoration: none;"><button class="btn"> LOGIN</button></a>
+            <a href="Signup.html" style="text-decoration: none;"><button class="btn">REGISTER</button></a>
+        </div><br><br>
+    </header>
+    <div class="container5">
+        <div class="main">
+            <div class="register">
+                <h2>PNR Status Enquiry</h2>
+                <form id="register">
+
+                    <div><input class="f-input" type="number" placeholder="Enter PNR no."></div>
+                    <br>
+                    <div>
+                        <input id="submit" type="submit" value="Search" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container1">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>IRCTC Trains</h4>
+                    <ul>
+                        <li><a href="#">Other Services</a></li>
+                        <li><a href="#">General Information</a></li>
+                        <li><a href="#">Important Information</a></li>
+                        <li><a href="#">Refund Rules</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>INFO</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Agents</a></li>
+                        <li><a href="#">Enquiries </a></li>
+                        <li><a href="#">Person with disabilities facilities</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Terms and offer</h4>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Offers </a></li>
+                        <li><a href="#">Covid Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f" style="font-size: 30px;"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="font-size: 30px;"></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="font-size: 30px;"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in" style="font-size: 30px;"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

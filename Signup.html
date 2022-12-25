@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Indian Railway Corporation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+        }
+
+        body {
+            background: #dfe9f5;
+        }
+        .header {
+            margin-top: -3vw;
+            background-color: white;
+        }
+
+        #left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: -22px;
+            height: 6vw;
+            margin-top: 4vw;
+        }
+
+        
+        .mid {
+            display: block;
+            width: 60vw;
+            margin: 0 20vw;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 2vw;
+            top: 2.2vw;
+            display: inline-block;
+            /*border: 2px solid yellow;*/
+        }
+
+        .navbar {
+            display: inline-block;
+            color: aliceblue;
+            margin-bottom: -1vw;
+            margin-top: 6vw;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: rgb(17, 12, 14);
+            text-decoration: none;
+            padding: 1.6vw 1.8vw;
+            font-weight: bold;
+
+        }
+
+        .navbar li a:hover {
+            text-decoration: none;
+            border-bottom: 3px solid rgb(213, 215, 212);
+
+
+        }
+
+        .navbar li a.active {
+            border-bottom: 3px solid rgb(213, 215, 212);
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: none;
+            color: rgba(250, 100, 0, 0.9);
+            cursor: pointer;
+
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(29, 233, 29);
+        }
+        .banner .form-cntr .nav-list .nav-list-item {
+            margin: 0 10px;
+            padding: 5px 15px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, .9);
+        }
+        .wrapper {
+            width: 330px;
+            padding: 2rem 1rem;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #07001f;
+            margin-bottom: 1.2rem;
+        }
+
+        form input {
+            width: 92%;
+            outline: none;
+            border: 1px solid #fff;
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            background: #e4e4e4;
+        }
+
+        button {
+            font-size: 1rem;
+            margin-top: 1.8rem;
+            padding: 10px 0;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            width: 90%;
+            color: #fff;
+            cursor: pointer;
+            background: rgb(17, 107, 143);
+        }
+
+        button:hover {
+            background: rgba(17, 107, 143, 0.877);
+        }
+
+        input:focus {
+            border: 1px solid rgb(192, 192, 192);
+        }
+
+        .terms {
+            margin-top: 0.2rem;
+        }
+
+        .terms input {
+            height: 1em;
+            width: 1em;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .terms label {
+            font-size: 0.7rem;
+        }
+
+        .terms a {
+            color: rgb(17, 107, 143);
+            text-decoration: none;
+        }
+
+        .member {
+            font-size: 0.8rem;
+            margin-top: 1.4rem;
+            color: #636363;
+        }
+
+        .member a {
+            color: rgb(17, 107, 143);
+            text-decoration: none;
+        }
+
+        .recover {
+            text-align: right;
+            font-size: 0.7rem;
+            margin: 0.3rem 1.4rem 0 0;
+        }
+
+        .recover a {
+            text-decoration: none;
+            color: #464647;
+        }
+        .footer {
+            background-color:rgb(115 106 178);
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 7vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+
+
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <img id="left" src="images/rails.jpg" alt="" style="width: 263px;">
+            <ul class="navbar">
+                <li><a href="jaidee.html">Home</a></li>
+                <li><a href="pnrstatus.html">PNR Status</a></li>
+                <li><a href="holidays.html" > Holidays</a></li>
+                <li><a href="e-catering.html"> E-Catering</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <!--<button class="btn">LOGIN</button>-->
+           <!-- <button class="btn">REGISTER</button>-->
+        </div><br><br>
+    </header>
+
+    <div class="wrapper">
+        <h1>Sign Up</h1>
+        <form actions="#">
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Password">
+            <input type="text" placeholder="Re-Enter Password">
+      </form>
+      <div class="terms">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">I agree to these <a
+            href="#">Terms & conditions</a></label>
+        
+      </div>
+      <button>Sign Up</button>
+      <div class="member">
+        Already a member? <a href="login.html">
+            Login Here
+
+        </a>
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="center">
+            Copyright &copy; www.irc.signup.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+</html>
